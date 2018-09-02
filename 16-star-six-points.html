@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>六角星</title>
+    <style>
+        div {
+           width: 0px;
+           height: 0px;
+           border-bottom: 100px solid red;
+           border-left: 50px solid transparent;
+           border-right: 50px solid transparent; 
+           position: relative;
+        }
+        div::after {
+            content: "";
+            width: 0px;
+            height: 0px;
+            border-top: 100px solid red;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            position: absolute;
+            left: -50px;
+            top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
